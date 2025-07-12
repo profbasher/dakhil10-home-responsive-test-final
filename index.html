@@ -82,8 +82,9 @@
         id="entryForm"
         class="bg-white p-4 sm:p-6 rounded shadow mb-6 space-y-4"
       >
+        <!-- Name and Roll Fields -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <!-- Name Field -->
+          <!-- Student Name -->
           <div class="relative">
             <input
               type="text"
@@ -100,7 +101,7 @@
             </label>
           </div>
 
-          <!-- Roll Field -->
+          <!-- Roll Number -->
           <div class="relative">
             <input
               type="text"
@@ -118,149 +119,228 @@
           </div>
         </div>
 
-        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-          <label class="block text-sm font-medium">
-            Kuran & Tajvid
+        <!-- Subject Inputs -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+        >
+          <!-- Subject Input Template -->
+          <!-- Repeat for each subject field -->
+
+          <!-- Example: Kuran & Tajvid -->
+          <div class="relative">
             <input
+              type="text"
               name="kuran_tajvid"
+              id="kuran_tajvid"
+              class="peer w-full border border-gray-300 rounded-md px-4 pt-5 pb-2 text-sm placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               placeholder="Kuran & Tajvid"
-              type="text"
-              step="any"
-              class="p-2 border rounded w-full"
             />
-          </label>
-          <label class="block text-sm font-medium">
-            Akaid & Fikah
+            <label
+              for="kuran_tajvid"
+              class="absolute left-3 top-2 text-gray-500 text-xs transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-blue-500"
+            >
+              Kuran & Tajvid
+            </label>
+          </div>
+
+          <!-- Copy-paste the block above for each subject below, updating name/id/label/placeholder -->
+          <div class="relative">
             <input
+              type="text"
               name="akaid_fikah"
+              id="akaid_fikah"
+              class="peer w-full border border-gray-300 rounded-md px-4 pt-5 pb-2 text-sm placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               placeholder="Akaid & Fikah"
-              type="text"
-              step="any"
-              class="p-2 border rounded w-full"
             />
-          </label>
-          <label class="block text-sm font-medium">
-            Hadis
+            <label
+              for="akaid_fikah"
+              class="absolute left-3 top-2 text-gray-500 text-xs transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-blue-500"
+              >Akaid & Fikah</label
+            >
+          </div>
+
+          <div class="relative">
             <input
+              type="text"
               name="hadis"
+              id="hadis"
+              class="peer w-full border border-gray-300 rounded-md px-4 pt-5 pb-2 text-sm placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               placeholder="Hadis"
-              type="text"
-              step="any"
-              class="p-2 border rounded w-full"
             />
-          </label>
-          <label class="block text-sm font-medium">
-            Arabic 1
+            <label
+              for="hadis"
+              class="absolute left-3 top-2 text-gray-500 text-xs transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-blue-500"
+              >Hadis</label
+            >
+          </div>
+
+          <div class="relative">
             <input
+              type="text"
               name="arabic1"
+              id="arabic1"
+              class="peer w-full border border-gray-300 rounded-md px-4 pt-5 pb-2 text-sm placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               placeholder="Arabic 1"
-              type="text"
-              step="any"
-              class="p-2 border rounded w-full"
             />
-          </label>
-          <label class="block text-sm font-medium">
-            Arabic 2
+            <label
+              for="arabic1"
+              class="absolute left-3 top-2 text-gray-500 text-xs transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-blue-500"
+              >Arabic 1</label
+            >
+          </div>
+
+          <div class="relative">
             <input
+              type="text"
               name="arabic2"
+              id="arabic2"
+              class="peer w-full border border-gray-300 rounded-md px-4 pt-5 pb-2 text-sm placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               placeholder="Arabic 2"
-              type="text"
-              step="any"
-              class="p-2 border rounded w-full"
             />
-          </label>
-          <label class="block text-sm font-medium">
-            Math
+            <label
+              for="arabic2"
+              class="absolute left-3 top-2 text-gray-500 text-xs transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-blue-500"
+              >Arabic 2</label
+            >
+          </div>
+
+          <div class="relative">
             <input
+              type="text"
               name="gmath"
+              id="gmath"
+              class="peer w-full border border-gray-300 rounded-md px-4 pt-5 pb-2 text-sm placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               placeholder="Math"
-              type="text"
-              step="any"
-              class="p-2 border rounded w-full"
             />
-          </label>
-          <label class="block text-sm font-medium">
-            English 1
+            <label
+              for="gmath"
+              class="absolute left-3 top-2 text-gray-500 text-xs transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-blue-500"
+              >Math</label
+            >
+          </div>
+
+          <div class="relative">
             <input
+              type="text"
               name="english1"
+              id="english1"
+              class="peer w-full border border-gray-300 rounded-md px-4 pt-5 pb-2 text-sm placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               placeholder="English 1"
-              type="text"
-              step="any"
-              class="p-2 border rounded w-full"
             />
-          </label>
-          <label class="block text-sm font-medium">
-            English 2
+            <label
+              for="english1"
+              class="absolute left-3 top-2 text-gray-500 text-xs transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-blue-500"
+              >English 1</label
+            >
+          </div>
+
+          <div class="relative">
             <input
+              type="text"
               name="english2"
+              id="english2"
+              class="peer w-full border border-gray-300 rounded-md px-4 pt-5 pb-2 text-sm placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               placeholder="English 2"
-              type="text"
-              step="any"
-              class="p-2 border rounded w-full"
             />
-          </label>
-          <label class="block text-sm font-medium">
-            Bengali 1
+            <label
+              for="english2"
+              class="absolute left-3 top-2 text-gray-500 text-xs transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-blue-500"
+              >English 2</label
+            >
+          </div>
+
+          <div class="relative">
             <input
+              type="text"
               name="bengali1"
+              id="bengali1"
+              class="peer w-full border border-gray-300 rounded-md px-4 pt-5 pb-2 text-sm placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               placeholder="Bengali 1"
-              type="text"
-              step="any"
-              class="p-2 border rounded w-full"
             />
-          </label>
-          <label class="block text-sm font-medium">
-            Bengali 2
+            <label
+              for="bengali1"
+              class="absolute left-3 top-2 text-gray-500 text-xs transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-blue-500"
+              >Bengali 1</label
+            >
+          </div>
+
+          <div class="relative">
             <input
+              type="text"
               name="bengali2"
+              id="bengali2"
+              class="peer w-full border border-gray-300 rounded-md px-4 pt-5 pb-2 text-sm placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               placeholder="Bengali 2"
-              type="text"
-              step="any"
-              class="p-2 border rounded w-full"
             />
-          </label>
-          <label class="block text-sm font-medium">
-            Islamic History / Phy
+            <label
+              for="bengali2"
+              class="absolute left-3 top-2 text-gray-500 text-xs transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-blue-500"
+              >Bengali 2</label
+            >
+          </div>
+
+          <div class="relative">
             <input
+              type="text"
               name="ishistory_physics"
+              id="ishistory_physics"
+              class="peer w-full border border-gray-300 rounded-md px-4 pt-5 pb-2 text-sm placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               placeholder="Islamic History / Physics"
-              type="text"
-              step="any"
-              class="p-2 border rounded w-full"
             />
-          </label>
-          <label class="block text-sm font-medium">
-            PE / Biology
+            <label
+              for="ishistory_physics"
+              class="absolute left-3 top-2 text-gray-500 text-xs transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-blue-500"
+              >Islamic History / Physics</label
+            >
+          </div>
+
+          <div class="relative">
             <input
+              type="text"
               name="phedu_bio"
+              id="phedu_bio"
+              class="peer w-full border border-gray-300 rounded-md px-4 pt-5 pb-2 text-sm placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               placeholder="PE / Biology"
-              type="text"
-              step="any"
-              class="p-2 border rounded w-full"
             />
-          </label>
-          <label class="block text-sm font-medium">
-            Chemistry / ICT
+            <label
+              for="phedu_bio"
+              class="absolute left-3 top-2 text-gray-500 text-xs transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-blue-500"
+              >PE / Biology</label
+            >
+          </div>
+
+          <div class="relative">
             <input
+              type="text"
               name="chemistry_ict"
+              id="chemistry_ict"
+              class="peer w-full border border-gray-300 rounded-md px-4 pt-5 pb-2 text-sm placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
               placeholder="Chemistry / ICT"
-              type="text"
-              step="any"
-              class="p-2 border rounded w-full"
             />
-          </label>
-          <label class="block text-sm font-medium">
-            Ag / Higher Math
+            <label
+              for="chemistry_ict"
+              class="absolute left-3 top-2 text-gray-500 text-xs transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-blue-500"
+              >Chemistry / ICT</label
+            >
+          </div>
+
+          <div class="relative">
             <input
-              name="ag_hmath"
-              placeholder="Ag / Higher Math"
               type="text"
-              step="any"
-              class="p-2 border rounded w-full"
+              name="ag_hmath"
+              id="ag_hmath"
+              class="peer w-full border border-gray-300 rounded-md px-4 pt-5 pb-2 text-sm placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Ag / Higher Math"
             />
-          </label>
+            <label
+              for="ag_hmath"
+              class="absolute left-3 top-2 text-gray-500 text-xs transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-blue-500"
+              >Ag / Higher Math</label
+            >
+          </div>
         </div>
 
+        <!-- Buttons -->
         <div
           class="flex flex-col sm:flex-row sm:space-x-4 space-y-2 sm:space-y-0"
         >
