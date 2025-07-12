@@ -82,23 +82,42 @@
         id="entryForm"
         class="bg-white p-4 sm:p-6 rounded shadow mb-6 space-y-4"
       >
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <label class="block text-sm font-medium">
-            Name
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <!-- Name Field -->
+          <div class="relative">
             <input
+              type="text"
               name="s_name"
-              placeholder="Name"
-              class="p-2 border rounded w-full"
+              id="s_name"
+              class="peer w-full border border-gray-300 rounded-md px-4 pt-5 pb-2 text-sm placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Student Name"
+              required
             />
-          </label>
-          <label class="block text-sm font-medium">
-            Roll (unique)
+            <label
+              for="s_name"
+              class="absolute left-3 top-2 text-gray-500 text-xs transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-blue-500"
+            >
+              Student Name
+            </label>
+          </div>
+
+          <!-- Roll Field -->
+          <div class="relative">
             <input
+              type="text"
               name="roll"
-              placeholder="Roll (unique)"
-              class="p-2 border rounded w-full"
+              id="roll"
+              class="peer w-full border border-gray-300 rounded-md px-4 pt-5 pb-2 text-sm placeholder-transparent focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              placeholder="Roll Number (unique)"
+              required
             />
-          </label>
+            <label
+              for="roll"
+              class="absolute left-3 top-2 text-gray-500 text-xs transition-all peer-placeholder-shown:top-3 peer-placeholder-shown:text-sm peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-xs peer-focus:text-blue-500"
+            >
+              Roll Number (unique)
+            </label>
+          </div>
         </div>
 
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
